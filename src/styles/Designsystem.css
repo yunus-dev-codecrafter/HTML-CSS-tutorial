@@ -143,9 +143,39 @@
 }
 
 /* !style rules for common classes */
+.text-center {
+    text-align: center;
+}
+
 .container {
     max-width: 1140px;
     margin: auto;
+    align-items: center;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.common-title {
+    text-transform: capitalize;
+    font-family: var(--font-1);
+    font-weight: bold;
+    font-size: var(--h1);
 }
 
 @media(max-width:1200px) {
